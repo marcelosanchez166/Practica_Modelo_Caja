@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="keywords" content="HTML5, CSS3, JavaScript" />
+    <title>Torneo Futbol</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="normalize.css" />
+</head>
+
+<body>
+    <div id="agrupar">
+        <header id="cabecera">
+            <h1>Torneo de Futbol Liga española</h1>
+        </header>
+        <nav id="menu">
+            <ul>
+                <li>principal</li>
+                <li>Fotos</li>
+                <li>Videos</li>
+                <li>Contacto</li>
+            </ul>
+        </nav>
+        <section id="seccion">
+            <article>
+                <header>
+                    <hgroup>
+                        <h1>Titulo del mensaje uno</h1>
+                        <h2>Subtitulo del mensaje dos</h2>
+                    </hgroup>
+                    <time datetime="2022-04-04" pubdate> Publicado 04-04-2022 </time>
+                </header>
+
+                <!-- Tabla el tr significa table row y el th table header como para poder los titulos de la tabla -->
+                <section class="tabla" >
+                    <table class="tabla">
+                        <!-- la etiqueta thead sirve para indicar al navegador cuales son las cabeceras de la tabla -->
+                        <thead>
+                            <tr>
+                                <th>precio</th>
+                                <th>producto</th>
+                                <th>cantidad</th>
+                            </tr>
+                        </thead>
+                        <!-- la etiqueta tbody sirve para indicar cuales son los elementos de cada cabecera -->
+                        <tbody>
+                            <!-- el td es para poner los valores de cada elemento -->
+                            <tr>
+                                <td>$15.00</td>
+                                <td>Macarrones</td>
+                                <td>15 unidades</td>
+                            </tr>
+                            <tr>
+                                <td>$10.00</td>
+                                <td>Pepinos</td>
+                                <td>20 unidades</td>
+                            </tr>
+                            <tr>
+                                <td>$5.00</td>
+                                <td>tomates</td>
+                                <td>5 unidades</td>
+                            </tr>
+                        </tbody>
+                        <tfoot>
+                            <td>total: $30.00</td>
+                            <td>tipos de productos: 3</td>
+                            <td>total de unidades 40</td>
+                        </tfoot>
+                    </table>
+                </section>
+
+                Este es el texto de mi primer mensaje
+
+                <!-- La etiqueta ul es una lista no ordenada -->
+                <section class="lista_desordenada">
+                    <ul>
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                    </ul>
+                    <br>
+                    <!-- La etiqueta ol es una lista ordenada -->
+                    <ol>
+                        <li>Elemento 1</li>
+                        <li>Elemento 2</li>
+                        <li>Elemento 3</li>
+                        <!-- Lsita con sub elementos -->
+                        <li >
+                                <ol>
+                                    <li style="list-style-type:lower-alpha ;">sub Elemento 1</li>
+                                    <li style="list-style-type:lower-alpha ;">sub Elemento 2</li>
+                                    <li style="list-style-type:lower-alpha ;">sub Elemento 2</li>
+                                </ol>
+                        </li>
+                    </ol>
+                </section>
+                <section class="form">
+                    <h2 class="title_form">Formulario de Datos Personales</h2>
+                    <!-- En la propiedad action de form sirve para poner la ruta a donde quiero que se envien los datos -->
+                    <form action="/formulario" method="GET"> 
+                        <label for="Nombre">Nombre</label>
+                        <input id="Nombre" name="Nombre" placeholder="Nombre" type="text">
+                        <br>
+                        <label for="Nombre">Edad</label>
+                        <input id="Edad" name="Edad" placeholder="Edad" type="number" >
+                        <br>
+                        <label for="Password">Password</label>
+                        <input id="Password" name="Password" placeholder="Password" type="password">
+                        <br>
+                        <label for="Email">Email</label>
+                        <input id="Email" name="Email" placeholder="Email" type="email">
+                        <br>
+                        <label for="archivos">Subir archivos</label>
+                        <input id="archivos" name="archivos"  type="file">
+                        <br>
+                        <label for="genero">Genero:</label>
+                        <input type="radio" name="genero" id="genero">
+                        <label for="genero">Masculino</label>
+                        <input type="radio" name="genero" id="genero">
+                        <label for="genero">Femenino</label>
+                        <br>
+                        <label for="deportes">Deportes:</label>
+                        <label for="deportes">Futbol</label>
+                        <input type="checkbox" name="deportes" id="deportes">
+                        <label for="deportes">Tennis</label>
+                        <input type="checkbox" name="deportes" id="deportes">
+                        <br>
+                        <label for="comentario">comentario</label>
+                        <br>
+                        <textarea name="comentario" id="comentario" cols="30" rows="10" class="form" placeholder="Ingrese sus comentarios"></textarea>
+                        <br>
+                        <button type="reset">tipo reset</button>
+                        <button type="submit">tipo submit</button>
+                        <!-- El tipo button se debe configurar con javascript para poder dale el compartamiento que deseamos -->
+                        <button type="button">tipo button</button>
+                        <!-- <label for="Datos">Enviar Datos</label>
+                        <input id="Datos" name="Datos" type="submit"> -->
+                        <br>
+                    </form>
+                </section>
+                
+                <figure>
+                    <img src="img.jpg" />
+                </figure>
+                <footer>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Consequuntur beatae laborum eius. Eaque, tempora officiis itaque
+                        placeat totam pariatur labore? Unde, ab quae obcaecati nostrum
+                        fugit error tempore quod impedit?
+                    </p>
+                </footer>
+            </article>
+            <article>
+                <header>
+                    <hgroup>
+                        <h1>Titulo del mensaje dos</h1>
+                        <h2>Subtitulo del mensaje dos</h2>
+                    </hgroup>
+                    <time datetime="2022-04-04" pubdate> Publicado 04-04-2022 </time>
+                </header>
+                Este es el texto de mi segundo mensaje
+                <footer>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam
+                        sunt nemo totam delectus veniam non aut ut eveniet vel! Similique
+                        vel at ullam nobis amet pariatur aperiam odit voluptatibus
+                        repudiandae.
+                    </p>
+                </footer>
+            </article>
+        </section>
+        <aside id="columna">
+            <blockquote>Mensaje numero uno</blockquote>
+            <blockquote>Mensaje numero dos</blockquote>
+        </aside>
+        <footer id="pie">Derechos reservados &copy; 2020-2022</footer>
+    </div>
+</body>
+
+</html>
